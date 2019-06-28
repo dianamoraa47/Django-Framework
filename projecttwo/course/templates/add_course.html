@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>add course</title>
+</head>
+<body>
+	<h2>Add a new course</h2>
+
+<form method="POST"> {% csrf_token%}
+	{{form.as_p}}
+	<button type="submit"> Add </button>
+</form>
+</body>
+</html>
+
